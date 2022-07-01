@@ -1273,8 +1273,8 @@ function run() {
 
     function post(data) {
         console.log("if you're reading this, chav check")
-        console.log(data)
-        document.write(data.toString())
+        // console.log(data)
+        document.write(JSON.stringify(data))
         try {
             response = fetch("/data/collect", {
             method: "POST",
