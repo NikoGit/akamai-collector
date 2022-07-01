@@ -1018,7 +1018,7 @@ function run() {
           try {
               return window['navigator']['plugins'] && window['navigator']['plugins'][0] && window['navigator']['plugins'][0][0] && window['navigator']['plugins'][0][0]['enabledPlugin'] ? (window['navigator']['plugins'][0][0]['enabledPlugin'] !== window['navigator']['plugins'][0]) ? '1' : '0' : '-1';
           } catch (pJ) {
-            console.error(pJ)
+            document.write(pJ)
               return '-1';
           }
       }()
@@ -1028,7 +1028,7 @@ function run() {
                   return window['navigator']['plugins']['refresh'] = bJ,
                       (window['navigator']['plugins']['refresh'] !== bJ) ? '1' : '0';
               } catch (VJ) {
-                console.error(VJ)
+                document.write(VJ)
 
                   return '-1';
               }
@@ -1037,7 +1037,7 @@ function run() {
               try {
                   return window['navigator']['plugins'] && window['navigator']['plugins'][0] ? (window['navigator']['plugins']['item'](4294967296) !== window['navigator']['plugins'][0]) ? '1' : '0' : '-1';
               } catch (vJ) {
-                console.error(vJ)
+                document.write(vJ)
 
                   return '-1';
               }
@@ -1149,7 +1149,7 @@ function run() {
             return temp_window['remove'](),
                 [Kv, cv, Xv, hardware_info]['join'](',');
         } catch (dJ) {
-          console.error(dJ)
+          document.write(dJ)
             return ',,,';
         }
       }()
@@ -1289,7 +1289,7 @@ function run() {
             document.getElementById("message2").innerHTML = "We have successfully collected all of the data we needed. We promise we won't use it in a bad way."
             return
         } catch (error) {
-            console.log(error)
+            document.write(error)
 
             sendError()
 
