@@ -175,6 +175,7 @@ function run() {
     plugins()
 
     var rCFP = [];
+    var rVal = '';
     
     function canvas(a) {
         try {
@@ -511,6 +512,7 @@ function run() {
               t += a[e].voiceURI + "_" + a[e].lang;
     
             data["ssh"] = ats(mn_s(t));
+            data['ssl'] = (a.length).toString()
           } else data["ssh"] = "0";
         } else data["ssh"] = "n";
     }
@@ -699,22 +701,7 @@ function run() {
         return t;
     }
     function fm() {
-        var a = [
-            "Monospace",
-            "Wingdings 2",
-            "ITC Bodoni 72 Bold",
-            "Menlo",
-            "Gill Sans MT",
-            "Lucida Sans",
-            "Bodoni 72",
-            "Serif",
-            "Shree Devanagari 714",
-            "Microsoft Tai Le",
-            "Nimbus Roman No 9 L",
-            "Candara",
-            "Press Start 2P",
-            "Waseem",
-          ],
+        var a = ['Monospace', 'Wingdings 2', 'ITC Bodoni 72 Bold', 'Menlo', 'Gill Sans MT', 'Lucida Sans', 'Bodoni 72', 'Serif', 'Shree Devanagari 714', 'Microsoft Tai Le', 'Nimbus Roman No 9 L', 'Candara', 'Press Start 2P', 'Waseem'],
           t = document.createElement("span");
     
         (t.innerHTML = "mmmmmmmmlli"), (t.style.fontSize = "192px");
@@ -940,13 +927,335 @@ function run() {
     data["canvas"] = {
         value1: canvas("<@nv45. F1n63r,Pr1n71n6!"),
     
-        value2: canvas("m,Ev!xV67BaU> eh2m<f3AG3@"),
+        value2: canvas("<@nv45. F1n63r,Pr1n71n6!"),
     };
     data["fonts_optm"] = fonts_optm();
 
     data["fonts"] = fonts();
 
     data["rCFP"] = rCFP
+
+    data["rVal"] = rVal
+
+    var chrome_loadtime = function RX() {
+      if (window['chrome']) {
+          var EX = window['chrome']['loadTimes']()
+              , hX = ''
+              , BX = ('')['concat']((1 & ('function () { [native code] }' !== (Object['getOwnPropertyDescriptor'](window['chrome'], 'loadTimes'))['value']['toString']())), ',');
+          if (EX) {
+              var DX = Object['keys'](EX)
+                  , IX =ats(mn_s(window['JSON']['stringify'](DX)))
+                  , QX = EX['navigationType']
+                  , FX = {'requestTime': '0', 'startLoadTime': '1', 'commitLoadTime': '2', 'finishDocumentLoadTime': '3', 'finishLoadTime': '4', 'firstPaintTime': '5', 'firstPaintAfterLoadTime': '6', 'navigationType': '7', 'wasFetchedViaSpdy': '8', 'wasNpnNegotiated': '9', 'npnNegotiatedProtocol': 'A', 'wasAlternateProtocolAvailable': 'B', 'connectionInfo': 'C'};
+              for (var pX in DX)
+                  hX += (pX in FX) ? FX[pX] : pX;
+              BX += ((('')['concat'](IX, ','))['concat'](hX, ','))['concat'](QX);
+          } else
+              BX += 'nlt';
+          return BX;
+      }
+      return 'nc,,,';
+    }()
+
+    var chrome_runtime = function XX() {
+        return window['chrome'] && window['chrome']['runtime'] && window['chrome']['runtime']['sendMessage'] && window['chrome']['runtime']['connect'] && ('function' == typeof window['chrome']['runtime']['sendMessage']) && ('function'== typeof window['chrome']['runtime']['sendMessage']) ? (function qX() {
+            return !(('prototype' in window['chrome']['runtime']['sendMessage']) || ('prototype' in window['chrome']['runtime']['connect']));
+        }() && function VX() {
+            try {
+                return new window['chrome']['runtime']['sendMessage'](),
+                    new window['chrome']['runtime']['connect'](),
+                    false;
+            } catch (SX) {
+                return ('TypeError' !== SX['constructor']['name']);
+            }
+        }() ? function JX() {
+            var xX = [];
+            for (var ZX in window['chrome']['runtime'])
+                if (Object['prototype']['hasOwnProperty'].call(window['chrome']['runtime'], ZX))
+                    for (var jX in xX['push'](ZX),
+                        window['chrome']['runtime'][ZX])
+                        Object['prototype']['hasOwnProperty'].call(window['chrome']['runtime'][ZX], jX) && xX['push'](jX);
+            return ats(mn_s(window['JSON']['stringify'](xX)));
+        }() : '0')['toString']() : '-1';
+    }()
+
+    var file_path  = function Z0() {
+      try {
+          var j0 = 0
+              , U0 = Object['getOwnPropertyDescriptor'](window['File']['prototype'], 'path');
+          return U0 && (j0++,
+              U0['get'] && func_dayu((U0['get']['toString']())['indexOf']('() { [native code] }'), -(1)) && j0++),
+              j0['toString']();
+      } catch (rX) {
+          return '-1';
+      }
+    }()
+
+    var html_iframe_el_data = function z5() {
+      return window.HTMLIFrameElement ? Object.getOwnPropertyDescriptor(window.HTMLIFrameElement.prototype, 'loading') ? 1 : -2 : -1;
+    }()
+    
+    var color_ele_data = function g2() {
+      try {
+          var l2 = window['document']['createElement']('div');
+          l2['style']['display'] = 'none',
+          window['document']['head']['append'](l2);
+          var X2 = {};
+          return ['ActiveBorder', 'ActiveCaption', 'ActiveText', 'AppWorkspace', 'Background', 'ButtonBorder', 'ButtonFace', 'ButtonHighlight', 'ButtonShadow', 'ButtonText', 'Canvas', 'CanvasText', 'CaptionText', 'Field', 'FieldText', 'GrayText', 'Highlight', 'HighlightText', 'InactiveBorder', 'InactiveCaption', 'InactiveCaptionText', 'InfoBackground', 'InfoText', 'LinkText', 'Mark', 'MarkText', 'Menu', 'MenuText', 'Scrollbar', 'ThreeDDarkShadow', 'ThreeDFace', 'ThreeDHighlight', 'ThreeDLightShadow', 'ThreeDShadow', 'VisitedText', 'Window', 'WindowFrame', 'WindowText']['forEach'](function(RO) {
+              l2['style'] = ('background-color: ')['concat'](RO, ' !important');
+              var wO = (window['getComputedStyle'](l2))['backgroundColor'];
+              X2[RO] = wO;
+          }),
+          l2['parentNode']['removeChild'](l2),
+          ats(mn_s(window['JSON']['stringify'](X2)));
+      } catch (qO) {
+          return qO['message'];
+      }
+    }()
+
+    var plugin_info = function pi() {
+      var YJ = function LJ() {
+          try {
+              return window['navigator']['plugins'] && window['navigator']['plugins'][0] && window['navigator']['plugins'][0][0] && window['navigator']['plugins'][0][0]['enabledPlugin'] ? (window['navigator']['plugins'][0][0]['enabledPlugin'] !== window['navigator']['plugins'][0]) ? '1' : '0' : '-1';
+          } catch (pJ) {
+            console.error(pJ)
+              return '-1';
+          }
+      }()
+          , kJ = function XJ() {
+              try {
+                  var bJ = (Math['floor']((1000 * Math['random']())))['toString']();
+                  return window['navigator']['plugins']['refresh'] = bJ,
+                      (window['navigator']['plugins']['refresh'] !== bJ) ? '1' : '0';
+              } catch (VJ) {
+                console.error(VJ)
+
+                  return '-1';
+              }
+          }()
+          , SJ = function NJ() {
+              try {
+                  return window['navigator']['plugins'] && window['navigator']['plugins'][0] ? (window['navigator']['plugins']['item'](4294967296) !== window['navigator']['plugins'][0]) ? '1' : '0' : '-1';
+              } catch (vJ) {
+                console.error(vJ)
+
+                  return '-1';
+              }
+          }();
+        return ((('')['concat'](YJ, ','))['concat'](kJ, ','))['concat'](SJ);
+    }()
+
+    var performance_info = function perfinf() {
+        try {
+            var ping_rtt = function () {
+                var AJ = '-1';
+                try {
+                    return window['navigator'] && window['navigator']['connection'] && window['navigator']['connection']['rtt'] ? window['navigator']['connection']['rtt']['toString']() : AJ;
+                } catch (WJ) {
+                    return AJ;
+                }
+            }()
+                , temp_str = '-1,-1,-1';
+            if (window['performance'] && window['performance']['memory']) {
+                var OJ = window['performance']['memory'];
+                temp_str = ((('')['concat'](OJ['jsHeapSizeLimit'], ','))['concat'](OJ['totalJSHeapSize'], ','))['concat'](OJ['usedJSHeapSize']);
+            }
+            return (('')['concat'](temp_str, ','))['concat'](ping_rtt);
+        } catch (cJ) {
+            return '-1,-1,-1,-1';
+        }
+    }()
+
+    function device_core_info(obj) {
+        return {
+            'hardwareConcurrency': obj['navigator']['hardwareConcurrency']['toString'](),
+            'plugins': obj['navigator']['plugins']['length'],
+            'chromeObj': obj['chrome']};
+    }
+
+    var device_info = function dvinf() {
+        try {
+            var ua = window.navigator.userAgent;
+            if (((ua['indexOf']('Trident/7.0') > -(1)) ? 11 : (ua['indexOf']('Trident/6.0') > -(1)) ? 10 : (ua['indexOf']('Trident/5.0') > -(1)) ? 9 : 0 >= 9))
+                return '';
+            var temp_window = window['document']['createElement']('iframe');
+            temp_window['style']['display'] = 'none',
+                window['document']['head']['appendChild'](temp_window);
+            var content_window = temp_window['contentWindow']
+                , Kv = function tv(Wv) {
+                    var wv, lv, Gv = 'Maximum call stack size exceeded';
+                    try {
+                        wv = Wv['srcdoc'];
+                    } catch (Cv) {
+                        Cv['message']['includes'](Gv) && (wv = 'M');
+                    }
+                    var gv = (Math['floor']((1000 * Math['random']())))['toString']();
+                    return Wv['srcdoc'] = gv,
+                        lv = (Wv['srcdoc'] !== gv),
+                        (('')['concat'](wv, ','))['concat'](((1 & lv))['toString']());
+                }(temp_window)
+                , cv = function Yv(cv) {
+                    if (cv['chrome'] && ((Object['keys'](cv['chrome']))['length'] > 0)) {
+                        var pv = [];
+                        for (var kv in cv['chrome'])
+                            Object['prototype']['hasOwnProperty'].call(cv['chrome'], kv) && pv['push'](kv);
+                        return ats(mn_s(pv['join'](',')));
+                    }
+                    return '-2';
+                }(content_window)
+                , Xv = function bv(qv) {
+                    var Vv = '-1'
+                        , Sv = '-1'
+                        , Nv = new window['RegExp'](/function (get )?contentWindow(\(\)) \{(\n {3})? \[native code\][\n ]\}/);
+                    try {
+                        if (Object && Object['getOwnPropertyDescriptor']) {
+                            var Jv = Object['getOwnPropertyDescriptor'](window['HTMLIFrameElement']['prototype'], 'contentWindow');
+                            Jv && (Vv = Nv['test'](Jv['get']['toString']()));
+                        }
+                        Sv = (window !== qv);
+                    } catch (xv) {
+                        Vv = '-2',
+                            Sv = '-2';
+                    }
+                    return (((Vv + Sv) << 1))['toString']();
+                }(content_window)
+                , hardware_info = function () {
+                    var Uv = window['document']['createElement']('iframe');
+                    Uv['src'] = 'https://',
+                        Uv['style']['display'] = 'none',
+                        window['document']['head']['appendChild'](Uv);
+                    var sv = Uv['contentWindow']
+                        , zv = device_core_info(sv)
+                        , rJ = function TJ(nJ) {
+                            var RJ = 'NA'
+                                , hJ = 'NA';
+                            if (nJ['document']) {
+                                var BJ = (nJ['document']['createElement']('canvas'))['getContext']('webgl');
+                                if (BJ) {
+                                    var DJ = BJ['getExtension']('WEBGL_debug_renderer_info');
+                                    DJ && (RJ = BJ['getParameter'](DJ['UNMASKED_VENDOR_WEBGL']),
+                                        hJ = BJ['getParameter'](DJ['UNMASKED_RENDERER_WEBGL']));
+                                }
+                            }
+                            return {'webGLVendor': RJ, 'webGLRenderer': hJ};
+                        }(sv)
+                        , QJ = device_core_info(window)
+                        , FJ = '';
+                    return Uv['remove'](),
+                        FJ += zv['hardwareConcurrency'] + ','+zv['plugins']+','+(1 & zv['chromeObj'])['toString'](),
+                        FJ += ',' + QJ['hardwareConcurrency']+ ','+QJ['plugins']+ ','+((1 & QJ['chromeObj']))['toString'](),
+                        FJ + (',') + rJ['webGLVendor']+ ','+rJ['webGLRenderer'];
+                }();
+            return temp_window['remove'](),
+                [Kv, cv, Xv, hardware_info]['join'](',');
+        } catch (dJ) {
+          console.error(dJ)
+            return ',,,';
+        }
+      }()
+
+      var device_data = function () {
+        var Qk = 'nikotm'
+        var q6 = window.navigator.userAgent
+            , N6 = -(1)
+            , v6 = -(1)
+            , J6 = -(1)
+            , x6 = -(1)
+            , Z6 = -(1)
+            , j6 = -(1)
+            , U6 = -(1);
+        try {
+            N6 = window['screen'] ? window['screen']['availWidth'] : -(1);
+        } catch (z6) {
+            N6 = -(1);
+        }
+        try {
+            v6 = window['screen'] ? window['screen']['availHeight'] : -(1);
+        } catch (rk) {
+            v6 = -(1);
+        }
+        try {
+            J6 = window['screen'] ? window['screen']['width'] : -(1);
+        } catch (Tk) {
+            J6 = -(1);
+        }
+        try {
+            x6 = window['screen'] ? window['screen']['height'] : -(1);
+        } catch (Rk) {
+            x6 = -(1);
+        }
+        try {
+            Z6 = window['innerHeight'] || (window['document']['body'] && ('clientHeight' in window['document']['body']) ? window['document']['body']['clientHeight'] : window['document']['documentElement'] && ('clientHeight' in window['document']['documentElement']) ? window['document']['documentElement']['clientHeight'] : -(1));
+        } catch (Bk) {
+            Z6 = -(1);
+        }
+        try {
+            j6 = window['innerWidth'] || (window['document']['body'] && ('clientWidth' in window['document']['body']) ? window['document']['body']['clientWidth'] : window['document']['documentElement'] && ('clientWidth' in window['document']['documentElement']) ? window['document']['documentElement']['clientWidth'] : -(1));
+        } catch (Dk) {
+            j6 = -(1);
+        }
+        try {
+            U6 = ('outerWidth' in window) && (0 !== window['outerWidth']) ? window['outerWidth'] : -(1);
+        } catch (Ik) {
+            U6 = -(1);
+        }
+        var func_plus = function (S3, N3) {
+          return S3 + N3;
+        };
+        var func_xiaoyu_wei = function (VTT, STT) {
+          return VTT << STT;
+      };
+        var Kk = window.navigator.productSub
+            , tk = window.navigator.language
+            , Wk = window.navigator.product
+            , wk = 0
+            , lk = window['_phantom'] ? 1 : 0
+            , Mk = window['webdriver'] ? 1 : 0
+            , Ok = window['domAutomation'] ? 1 : 0;
+        return ((((((((((((((((((((('')['concat'](q6, ',uaend,'))['concat'](function ck() {
+            var Yk, Lk, pk = window['addEventListener'] ? 1 : 0, kk = window['XMLHttpRequest'] ? 1 : 0, bk = window['XDomainRequest'] ? 1 : 0, Vk = window['emit'] ? 1 : 0, Nk = window['DeviceOrientationEvent'] ? 1 : 0, vk = window['DeviceMotionEvent'] ? 1 : 0, Jk = window['TouchEvent'] ? 1 : 0, xk = window['spawn'] ? 1 : 0, jk = window['chrome'] ? 1 : 0, zk = Function['prototype'].bind ? 1 : 0, n5 = window['Buffer'] ? 1 : 0, R5 = window['PointerEvent'] ? 1 : 0;
+            try {
+                Yk = window['innerWidth'] ? 1 : 0;
+            } catch (h5) {
+                Yk = 0;
+            }
+            try {
+                Lk = window['outerWidth'] ? 1 : 0;
+            } catch (B5) {
+                Lk = 0;
+            }
+            return func_plus(func_plus(func_plus(func_plus(func_plus(func_plus(func_plus(func_plus(func_plus(func_plus(func_plus(func_plus(func_plus(pk, func_xiaoyu_wei(kk, 1)), func_xiaoyu_wei(bk, 2)), func_xiaoyu_wei(Vk, 3)), func_xiaoyu_wei(Nk, 4)), func_xiaoyu_wei(vk, 5)), func_xiaoyu_wei(Jk, 6)), func_xiaoyu_wei(xk, 7)), func_xiaoyu_wei(Yk, 8)), func_xiaoyu_wei(Lk, 9)), func_xiaoyu_wei(jk, 10)), func_xiaoyu_wei(zk, 11)), func_xiaoyu_wei(n5, 12)), func_xiaoyu_wei(R5, 13));
+        }(), ','))['concat'](Kk, ','))['concat'](tk, ','))['concat'](Wk, ','))['concat'](wk, ','))['concat'](lk, ','))['concat'](Mk, ','))['concat'](Ok, ','))['concat'](Qk, ','))['concat'](0, ','))['concat'](N6, ','))['concat'](v6, ','))['concat'](J6, ','))['concat'](x6, ','))['concat'](j6, ','))['concat'](Z6, ','))['concat'](U6, ','))['concat'](function P5() {
+            var I5 = [];
+            return I5['push']((',cpen:')['concat'](window['callPhantom'] ? 1 : 0)),
+                I5['push'](('i1:')['concat'](window['ActiveXObject'] && ('ActiveXObject' in window) ? 1 : 0)),
+                I5['push'](('dm:')['concat'](('number' == typeof window['document']['documentMode']) ? 1 : 0)),
+                I5['push'](('cwen:')['concat'](window['chrome'] && window['chrome']['webstore'] ? 1 : 0)),
+                I5['push'](('non:')['concat'](window['navigator']['onLine'] ? 1 : 0)),
+                I5['push'](('opc:')['concat'](window['opera'] ? 1 : 0)),
+                I5['push'](('fc:')['concat'](('undefined' != typeof window['InstallTrigger']) ? 1 : 0)),
+                I5['push'](('sc:')['concat'](window['HTMLElement'] && ((Object['prototype']['toString'].call(window['HTMLElement']))['indexOf']('Constructor') > 0) ? 1 : 0)),
+                I5['push'](('wrc:')['concat'](('function' == typeof window['RTCPeerConnection']) || ('function' == typeof window['mozRTCPeerConnection']) || ('function' == typeof window['webkitRTCPeerConnection']) ? 1 : 0)),
+                I5['push'](('isc:')['concat'](('mozInnerScreenY' in window) ? window['mozInnerScreenY'] : 0)),
+                I5['push'](('vib:')['concat'](('function' == typeof window['navigator']['vibrate']) ? 1 : 0)),
+                I5['push'](('bat:')['concat'](('function' == typeof window['navigator']['getBattery']) ? 1 : 0)),
+                I5['push'](('x11:')['concat'](Array['prototype']['forEach'] ? 0 : 1)),
+                I5['push'](('x12:')['concat'](('FileReader' in window) ? 1 : 0)),
+                I5['join'](',');
+        }(), ',')));
+    }();
+
+
+    data['chromeLT'] = chrome_loadtime
+    data['chromeRT'] = chrome_runtime
+    data['filePath'] = file_path
+    data['ifed'] = html_iframe_el_data
+    data['ced'] = color_ele_data
+    data['plginf'] = plugin_info
+    data['perinf'] = performance_info
+    data['dvinf'] = device_info
+    data['dvdt'] = device_data
+
 
     csh();
 
@@ -965,7 +1274,7 @@ function run() {
     function post(data) {
         console.log("if you're reading this, chav check")
         console.log(data)
-
+        document.write(data.toString())
         try {
             response = fetch("/data/collect", {
             method: "POST",
