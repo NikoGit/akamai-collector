@@ -1330,7 +1330,12 @@ if (typeof window.orientation !== 'undefined') {
 } else {*/
 window.onload = function () {
     setTimeout(function () {
-      run();
+      try {
+        run();}
+        catch (error) {
+          document.write(error)
+      }
+
     }, 2000);
 
 }
