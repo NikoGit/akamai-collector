@@ -1074,8 +1074,6 @@ function run() {
     }
 
     var device_info = function dvinf() {
-      return ',,,';
-
         try {
             var ua = window.navigator.userAgent;
             if (((ua['indexOf']('Trident/7.0') > -(1)) ? 11 : (ua['indexOf']('Trident/6.0') > -(1)) ? 10 : (ua['indexOf']('Trident/5.0') > -(1)) ? 9 : 0 >= 9))
@@ -1333,11 +1331,10 @@ if (typeof window.orientation !== 'undefined') {
 window.onload = function () {
     setTimeout(function () {
       try {
-        run();}
-        catch (error) {
-          document.write(error)
+        run();
+      }catch (error) {
+        document.write(error);
       }
-
     }, 2000);
 
 }
