@@ -129,7 +129,7 @@ const sensorSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    devinf: {
+    dvinf: {
         type: String,
         required: true
     }
