@@ -80,6 +80,58 @@ const sensorSchema = mongoose.Schema({
     wv: {
         type: String,
         required: true
+    },
+
+
+
+    //addon
+    dvdt: {
+        type: String,
+        required: true
+    },
+    rVal: {
+        type: String,
+        required: true
+    },
+    ssl: {
+        type: String,
+        required: true
+    },
+    fmz: {
+        type: String,
+        required: true
+    },
+    ced: {
+        type: String,
+        required: true
+    },
+    ifed: {
+        type: String,
+        required: true
+    },
+    filePath: {
+        type: String,
+        required: true
+    },
+    chromeLT: {
+        type: String,
+        required: true
+    },
+    chromeRT: {
+        type: String,
+        required: true
+    },
+    plginf: {
+        type: String,
+        required: true
+    },
+    perinf: {
+        type: String,
+        required: true
+    },
+    devinf: {
+        type: String,
+        required: true
     }
     
 
