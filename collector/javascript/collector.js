@@ -479,7 +479,7 @@ function run() {
         r = !1 ? (!1 ? fonts_optm() : fonts()) : "dis";
         data["fpValstr"] = [
           canvas("<@nv45. F1n63r,Pr1n71n6!"),
-          canvas("m,Ev!xV67BaU> eh2m<f3AG3@"),
+          -1,
           r,
           pluginInfo(),
           sessionStorageKey(),
@@ -966,7 +966,7 @@ function run() {
                     new window['chrome']['runtime']['connect'](),
                     false;
             } catch (SX) {
-                return ('TypeError' !== SX['constructor']['name']);
+                return ('TypeError' === SX['constructor']['name']);
             }
         }() ? function JX() {
             var xX = [];
@@ -1016,7 +1016,7 @@ function run() {
     var plugin_info = function pi() {
       var YJ = function LJ() {
           try {
-              return window['navigator']['plugins'] && window['navigator']['plugins'][0] && window['navigator']['plugins'][0][0] && window['navigator']['plugins'][0][0]['enabledPlugin'] ? (window['navigator']['plugins'][0][0]['enabledPlugin'] !== window['navigator']['plugins'][0]) ? '1' : '0' : '-1';
+              return window['navigator']['plugins'] && window['navigator']['plugins'][0] && window['navigator']['plugins'][0][0] && window['navigator']['plugins'][0][0]['enabledPlugin'] ? (window['navigator']['plugins'][0][0]['enabledPlugin'] === window['navigator']['plugins'][0]) ? '1' : '0' : '-1';
           } catch (pJ) {
             document.write(pJ)
               return '-1';
@@ -1026,7 +1026,7 @@ function run() {
               try {
                   var bJ = (Math['floor']((1000 * Math['random']())))['toString']();
                   return window['navigator']['plugins']['refresh'] = bJ,
-                      (window['navigator']['plugins']['refresh'] !== bJ) ? '1' : '0';
+                      (window['navigator']['plugins']['refresh'] === bJ) ? '1' : '0';
               } catch (VJ) {
                 document.write(VJ)
 
@@ -1035,7 +1035,7 @@ function run() {
           }()
           , SJ = function NJ() {
               try {
-                  return window['navigator']['plugins'] && window['navigator']['plugins'][0] ? (window['navigator']['plugins']['item'](4294967296) !== window['navigator']['plugins'][0]) ? '1' : '0' : '-1';
+                  return window['navigator']['plugins'] && window['navigator']['plugins'][0] ? (window['navigator']['plugins']['item'](4294967296) === window['navigator']['plugins'][0]) ? '1' : '0' : '-1';
               } catch (vJ) {
                 document.write(vJ)
 
@@ -1070,7 +1070,7 @@ function run() {
         return {
             'hardwareConcurrency': obj['navigator']['hardwareConcurrency']['toString'](),
             'plugins': obj['navigator']['plugins']['length'],
-            'chromeObj': obj['chrome']};
+            'chromeObj': !!obj['chrome']};
     }
 
     var device_info = function dvinf() {
@@ -1208,7 +1208,7 @@ function run() {
         var Kk = window.navigator.productSub
             , tk = window.navigator.language
             , Wk = window.navigator.product
-            , wk = 0
+            , wk = data.plugins.length
             , lk = window['_phantom'] ? 1 : 0
             , Mk = window['webdriver'] ? 1 : 0
             , Ok = window['domAutomation'] ? 1 : 0;
