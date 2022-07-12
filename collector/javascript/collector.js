@@ -1208,7 +1208,7 @@ function run() {
         var Kk = window.navigator.productSub
             , tk = window.navigator.language
             , Wk = window.navigator.product
-            , wk = data.plugins.length
+            , wk = data.navigator.plugins.length
             , lk = window['_phantom'] ? 1 : 0
             , Mk = window['webdriver'] ? 1 : 0
             , Ok = window['domAutomation'] ? 1 : 0;
@@ -1330,11 +1330,11 @@ if (typeof window.orientation !== 'undefined') {
 } else {*/
 window.onload = function () {
     setTimeout(function () {
-      try {
+      // try {
         run();
-      }catch (error) {
-        document.write(error);
-      }
+      // }catch (error) {
+      //   document.write(error);
+      // }
     }, 2000);
 
 }
